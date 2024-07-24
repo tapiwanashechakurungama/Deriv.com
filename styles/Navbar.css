@@ -1,0 +1,362 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-image: url(./../Images/mainbanner.webp);
+  width: 100vw;
+  height: 100vh;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+  margin: 0;
+  padding: 0;
+  transition: all ease 0.5s;
+}
+.first-text {
+  padding: 10px 0;
+  background-color: darkgrey;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  transition: all ease 0.5s;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+.logo p {
+  margin-top: 12px;
+  padding: 0 0 0 3px;
+  border-left: 2px grey solid;
+  color: lightskyblue;
+  font-style: italic;
+  font-weight: bold;
+}
+.logo h3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+.human {
+  background-image: url(./../Images/humanbanner.webp);
+  height: 80vh;
+  background-repeat: no-repeat;
+  width: 25vw;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 140px;
+  right: 150px;
+}
+ul {
+  display: none;
+}
+ul a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.loginbtn {
+  display: none;
+}
+.demobtn {
+  display: none;
+}
+
+.trade-hover {
+  background-color: white;
+  color: black;
+  padding: 60px;
+  border-radius: 0 0 15px 15px;
+  gap: 70px;
+  transition: all ease 0.3s;
+  display: none !important;
+}
+.show-trades .trade-hover {
+  display: block !important;
+  display: flex !important;
+  flex-direction: row !important;
+}
+.trade-hover:hover {
+  display: block !important;
+}
+.human {
+  display: none;
+}
+.hamburger {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  flex-direction: column;
+  position: fixed;
+  top: 67px;
+  right: 10px;
+  display: block;
+  z-index: 2;
+}
+.line {
+  width: 80%;
+  height: 3px;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.links {
+  display: block;
+  width: 100vw;
+  height: 0;
+  background-color: white;
+  transition: all ease 0.5s;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.active .links {
+  height: 100vh;
+}
+.active .hamburger .line {
+  background-color: black;
+}
+.active .hamburger{
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px black solid;
+}
+.cross .line1 {
+  display: none;
+}
+.cross .line2 {
+  display: none;
+}
+.cross .none {
+  display: block;
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+  .demobtn {
+    display: block;
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 8px;
+    opacity: 0.9;
+  }
+  .loginbtn {
+    padding: 8px 12px;
+    background-color: transparent;
+    color: white;
+    border: 1.5px white solid;
+    border-radius: 15px;
+    display: block;
+  }
+
+  .buttons {
+    display: flex;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    .hamburger{
+        display: none !important;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  ul {
+    display: block;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px !important;
+  }
+  .links {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .human {
+    display: block;
+  }
+  .navbar:hover {
+    background-color: white;
+  }
+
+  .navbar:hover .logo h3 {
+    color: red;
+  }
+  .navbar:hover ul a {
+    color: black;
+  }
+  .navbar:hover .loginbtn {
+    padding: 8px 12px;
+    background-color: transparent;
+    color: black;
+    border: 1.5px black solid;
+    border-radius: 15px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {
+}
