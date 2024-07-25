@@ -1,0 +1,13 @@
+.simpletrading{
+  min-height: 100vh;
+  padding: 10vh 0;
+}
+.simpletrading h1{
+  font-weight: bold;
+  color: black;
+}
+.simpletrading .carrd img{
+  width: 95%;
+  height: 70%;
+  margin-top: 10px;
+}

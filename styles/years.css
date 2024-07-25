@@ -54,7 +54,7 @@ table {
 }
 .carrd{
   padding: 30px 15px;
-  background-color: lightgrey;
+  background-color:white !important;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
