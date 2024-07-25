@@ -335,6 +335,9 @@ ol a {
 .text .btn{
     width: 8rem;
 }
+.fixed .navbar{
+    position: fixed;
+}
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Bootstrap 4 breakpoints

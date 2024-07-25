@@ -1,0 +1,19 @@
+.ratings .text-center p{
+  padding: 15px;
+  background-color: rgb(71, 69, 69);
+  font-weight : bold;
+  color: white;
+}
+.ratings{
+  margin: 0;
+}
+
+.ratings .text-center p span{
+  color: gold;
+}
+.months{
+  padding: 20px 10px;
+  background-color: lightgrey;
+  margin-top: -15px;
+
+}
