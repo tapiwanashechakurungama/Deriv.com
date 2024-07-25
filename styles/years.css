@@ -52,7 +52,7 @@ table {
   color: black;
 }
 .carrd{
-  padding: 30px;
+  padding: 30px 15px;
   background-color: lightgrey;
   border-radius: 20px;
   display: flex;
@@ -62,7 +62,13 @@ table {
   align-items: center;
   margin: 40px 12px;
   height: 50vh;
+  transition: all ease 1s;
 }
+.carrd:hover{
+  box-shadow: 0 0 0.2rem black;
+  transform: translateY(-10px);
+}
+
 
 
 
