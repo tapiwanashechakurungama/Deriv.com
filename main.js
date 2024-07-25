@@ -1,6 +1,8 @@
 const tradeShows = document.querySelector(".trade");
 const body = document.body;
 const ham = document.querySelector(".hamburger");
+const nav = document.querySelector(".navbar");
+console.log(nav)
 
 tradeShows.addEventListener("mouseover", () => {
   body.classList.add("show-trades");
@@ -13,7 +15,7 @@ ham.addEventListener("click", (event) => {
   body.classList.toggle("active");
   body.classList.toggle("cross");
 });
-window.addEventListener("scroll", () => {});
+
 
 
 const slider = document.querySelector(".slider");

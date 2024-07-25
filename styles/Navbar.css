@@ -229,14 +229,21 @@ ul a {
   width: 2rem;
   height: 2rem;
   flex-direction: column;
-  position: fixed;
-  top: 67px;
+  position: absolute;
+  top: 15px;
   right: 10px;
   display: block;
   z-index: 2;
   transition: all ease 1s;
   cursor: pointer;
 }
+.hamburger:hover .none{
+    transform: translateY(10px);
+}
+.hamburger:hover .line1{
+  transform: translateY(-10px);
+}
+
 .line {
   width: 80%;
   transition: all ease 1s;
@@ -267,19 +274,29 @@ ul a {
 .active .hamburger .line {
   background-color: black;
 }
-.active .hamburger {
+
+/* .active .hamburger {
   border-radius: 50%;
   padding: 8px;
   border: 1px black solid;
-}
+} */
 .cross .line1 {
-  scale: 0;
+  rotate: 45deg;
+  transform: translateX(-14.5px);
+  margin-left: 10px;
+  background-color: rgb(0, 0, 0) !important;
+}
+.cross .hamburger{
+  position: fixed;
 }
 .cross .line2 {
-  scale: 0;
+  rotate: -45deg;
+  transform: translateX(-14.5px);
+  margin-left: 10px;
+  background-color: rgb(0, 0, 0) !important;
 }
 .cross .none {
-  display: block;
+  scale: 0;
 }
 .logo2 {
   display: flex !important;
