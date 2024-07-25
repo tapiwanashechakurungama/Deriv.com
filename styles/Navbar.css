@@ -237,13 +237,6 @@ ul a {
   transition: all ease 1s;
   cursor: pointer;
 }
-.hamburger:hover .none{
-    transform: translateY(10px);
-}
-.hamburger:hover .line1{
-  transform: translateY(-10px);
-}
-
 .line {
   width: 80%;
   transition: all ease 1s;
@@ -274,7 +267,6 @@ ul a {
 .active .hamburger .line {
   background-color: black;
 }
-
 /* .active .hamburger {
   border-radius: 50%;
   padding: 8px;
@@ -284,16 +276,13 @@ ul a {
   rotate: 45deg;
   transform: translateX(-14.5px);
   margin-left: 10px;
-  background-color: rgb(0, 0, 0) !important;
-}
-.cross .hamburger{
-  position: fixed;
+
 }
 .cross .line2 {
   rotate: -45deg;
   transform: translateX(-14.5px);
   margin-left: 10px;
-  background-color: rgb(0, 0, 0) !important;
+
 }
 .cross .none {
   scale: 0;

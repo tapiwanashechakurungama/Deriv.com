@@ -69,7 +69,13 @@ table {
   box-shadow: 0 0 0.2rem black;
   transform: translateY(-5px);
 }
-
+@font-face {
+  font-family: "chilllax";
+  src: url(./../Chillax_Complete/Fonts/WEB/fonts/Chillax-Medium.woff);
+}
+h3{
+  font-family: "chilllax" !important;
+}
 
 
 
