@@ -122,6 +122,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: "chillax";
+  src: url(./../Chillax_Complete/Fonts/Variable/Chillax-Variable.ttf);
+}
 
 header {
   background-image: url(./../Images/mainbanner.webp);
@@ -166,7 +170,7 @@ body {
 }
 .logo h3 {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "chillax";
   font-style: italic;
   font-weight: bold;
 }
@@ -292,6 +296,7 @@ ul a {
 .logo2 h3 {
   font-size: 1.8em;
   color: red;
+  font-family: "chillax";
 }
 ol {
   display: flex;
@@ -322,7 +327,7 @@ ol a {
 .text h1 {
   color: white;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "chillax";
   font-size: 2rem;
 }
 .text p{
@@ -385,7 +390,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .text h1 {
   color: white;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "chillax";
   font-size: 4rem;
 }
 .text{
