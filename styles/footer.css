@@ -1,0 +1,229 @@
+.footer .first-text5{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row !important;
+
+}
+@font-face {
+  font-family: "chillax";
+  src: url(./../Chillax_Complete/Fonts/OTF/Chillax-Bold.otf);
+}
+
+.footer{
+  padding: 5vh 0;
+  color: black;
+}
+
+.footer h3{
+  color: red;
+   font-family: "chillax";
+   font-size: 3rem;
+   font-style: italic;
+}
+.logo4{
+  display: flex;
+}
+.logo4 p{
+  margin-top: 9px;
+  font-style: italic;
+  font-weight: 500;
+  color: darkcyan;
+}
+.socials{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+box-icon{
+  cursor: pointer;
+  transition: all ease 0.6s;
+}
+box-icon:hover{
+  transform: translateY(-8px);
+}
+.lastsection h4{
+  font-family: "chillax";
+  font-size: 1rem;
+}
+@font-face {
+  font-family: "chilax";
+  src: url(./../Chillax_Complete/Fonts/OTF/Chillax-Medium.otf);
+}
+.lastsection p{
+  font-family: "chilax";
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all ease 0.6s;
+}
+.lastsection p:hover{
+  opacity: 1;
+}
+
+.lastsection{
+  margin-top: 5vh;
+  display: none;
+}
+.phone-footer{
+  display: block;
+}
+.phone-footer h4{
+    font-family: "chillax";
+}
+.phone-footer p{
+    font-family: "chilax";
+    opacity: 0.8;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+   
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) { 
+     
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .phone-footer{
+    display: none;
+  }
+  .footer .first-text5{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row !important;
+
+}
+@font-face {
+  font-family: "chillax";
+  src: url(./../Chillax_Complete/Fonts/OTF/Chillax-Bold.otf);
+}
+
+.footer{
+  padding: 5vh 0;
+  color: black;
+}
+
+.footer h3{
+  color: red;
+   font-family: "chillax";
+   font-size: 3rem;
+   font-style: italic;
+}
+.logo4{
+  display: flex;
+}
+.logo4 p{
+  margin-top: 9px;
+  font-style: italic;
+  font-weight: 500;
+  color: darkcyan;
+}
+.socials{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+box-icon{
+  cursor: pointer;
+  transition: all ease 0.6s;
+}
+box-icon:hover{
+  transform: translateY(-8px);
+}
+.lastsection h4{
+  font-family: "chillax";
+  font-size: 1rem;
+}
+@font-face {
+  font-family: "chilax";
+  src: url(./../Chillax_Complete/Fonts/OTF/Chillax-Medium.otf);
+}
+.lastsection p{
+  font-family: "chilax";
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all ease 0.6s;
+}
+.lastsection p:hover{
+  opacity: 1;
+}
+
+.lastsection{
+  margin-top: 5vh;
+  display: block;
+}
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
+

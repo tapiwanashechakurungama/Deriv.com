@@ -235,6 +235,7 @@ ul a {
   display: block;
   z-index: 2;
   transition: all ease 1s;
+  cursor: pointer;
 }
 .line {
   width: 80%;
@@ -288,7 +289,9 @@ ul a {
   font-weight: 700;
   font-style: italic;
 }
-
+.buttons .btn{
+  margin-bottom: 5vh;
+}
 .logo2 p {
   margin-top: 7px;
   color: darkcyan;
