@@ -2,7 +2,11 @@ const tradeShows = document.querySelector(".trade");
 const body = document.body;
 const ham = document.querySelector(".hamburger");
 const nav = document.querySelector(".navbar");
-console.log(nav)
+const slider = document.querySelector(".slider");
+const slides = slider.querySelectorAll("li");
+const slideCount = slides.length;
+const links = document.querySelectorAll("a");
+let activeSlide = 0;
 
 tradeShows.addEventListener("mouseover", () => {
   body.classList.add("show-trades");
@@ -16,17 +20,14 @@ ham.addEventListener("click", (event) => {
   body.classList.toggle("cross");
 });
 
+links.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    body.classList.remove("active");
+    body.classList.remove("cross")
+  });
+});
 
-
-const slider = document.querySelector(".slider");
-const slides = slider.querySelectorAll("li");
-
-// Store the total number of images
-const slideCount = slides.length;
-let activeSlide = 0;
-
-// To change the images dynamically every
-// 5 Secs, use SetInterval() method
 setInterval(() => {
   slides[activeSlide].classList.remove("active");
   activeSlide++;
@@ -34,4 +35,5 @@ setInterval(() => {
     activeSlide = 0;
   }
   slides[activeSlide].classList.add("active");
-}, 2000);
+}, 1000);
+

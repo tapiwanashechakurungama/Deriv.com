@@ -319,12 +319,33 @@ ol a {
   font-weight: 600;
   opacity: 0.7;
 }
+.active .hamburger{
+  position: fixed;
+}
 .btn {
   padding: 10px;
   background-color: red !important;
   color: white !important;
   font-weight: bold;
   width: 80vw;
+}
+.popup{
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-family: "chillax";
+  width: 80vw;
+  padding: 30px 15px;
+  transform: translateX(10%);
+  position: fixed;
+  top: 50%;
+  border-radius: 20px;
+  opacity: 0;
+  transition: all ease 1s;
+  box-shadow: 0 0 1rem black;
+}
+.popushow .popup{
+  opacity: 1;
 }
 .text {
   height: 80vh;
